@@ -1,0 +1,125 @@
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  font-family: arial;
+  color: blue;
+}
+p {
+  font-family: arial;
+}
+ul {
+  font-family: arial
+}
+a:link {
+    text-decoration: none;
+    font-family: arial
+}
+
+a:visited {
+    text-decoration: none;
+    font-family: arial
+}
+
+#historyParagraph {
+  padding: 10px;
+}
+#churchParagraph {
+  padding: 10px
+}
+#healthParagraph {
+  padding: 10px
+}
+</style>
+</head>
+<body>
+<h1>Caffeine Facts</h1>
+<p>
+In light of the recent introduction of caffeinated beverages to BYU campus, I decided that it might be a good idea to create a site with tidbits of information about caffeine. Just click on the buttons to get a quick summary about an aspect of caffeine. Enjoy!
+</p>
+<button onclick="showParagraph()">Caffeine Discovery</button>
+<div id="historyParagraph" style="display:none">
+<p>
+While the effects of caffeine were well known to many ancient peoples, especially American and Chinese civilizations, the chemical itself wasn't isolated until 1819 by German chemist Friedlieb Ferdinand Runge, who called it <i>kaffebase,</i> since he thought of it as a base that existed in coffee.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Friedlieb_Ferdinand_Runge.jpeg" alt="Picture of a dude" align="middle"/>
+<p>
+This is Friedlieb Ferdinand Runge, the guy who first isolated caffeine. 
+</p>
+<a href="https://en.wikipedia.org/wiki/Caffeine#History">Source</a>
+</div>
+<p></p>
+<button onclick="showParagraphTwo()">Caffeine and the Church</button>
+<div id="churchParagraph" style="display:none">
+<p>
+Despite what many people have thought over the years, the Church never issued a ban on caffeine. Cultural views on caffeine were formed by false assumptions - that because coffee and tea both have caffeine in them, caffeine must be avoided (nevermind chocolate though!).<br>
+The University's reasoning behind not supplying caffeinated beverages on campus all these years is that there was no demand for them (have they seen any office fridge on campus?). It appears that viewpoint has since changed, and caffeinated beverages will be available all over campus soon, unfortunately exluding energy drinks.<br><br>
+<a href="https://www.lds.org/new-era/2008/04/to-the-point/is-there-anything-wrong-with-drinking-sodas-with-caffeine-in-them-is-caffeine-bad-the-word-of-wisdom-doesnt-mention-it?lang=eng">WoW on caffeine</a><br>
+<a href="http://universe.byu.edu/2012/09/11/no-demand-for-caffeine-at-byu/">BYU on caffeine</a>
+</p>
+</div>
+<p></p>
+<button onclick="showParagraphThree()">Caffeine's Effects</button>
+<div id="healthParagraph" style="display:none">
+<p>
+Caffeine is a substance that is constantly being studied in the scientific world, and some of these studies can lead to rumors and false conclusions. Its basic effects on people are well known:
+</p>
+<ul>
+<li>It promotes physical and cognitive performance</li>
+<li>It increases your heart rate and blood pressure</li>
+<li>It's used to treat certain newborn illnesses</li>
+<li>Consuming high amounts of caffeine can cause jitteriness, anxiety, and insomnia</li>
+<li>Addiction is a highly debated topic, with some experts claiming there is a lack of evidence that it is addictive</li>
+</ul>
+<a href="https://en.wikipedia.org/wiki/Caffeine#Side_effects">Source</a>
+</div>
+<p></p>
+<button onclick="showParagraphFour()">My take</button>
+<div id="myParagraph" style="display:none">
+<p>
+Allowing caffeinated beverages to be sold on BYU campus is ultimately a good thing. There was never any church doctrine or policy that specifically forbade its consumption, and it is widely regarded as a safe substance with minimal health risks. It is a very overdue policy change that I welcome with open arms. Now if only we could get them to rethink the beard policy next! A man can dream...
+</p>
+</div>
+<script>
+function showParagraph() {
+	var foo = document.getElementById('historyParagraph');
+  if (foo.style.display === 'none') {
+        foo.style.display = 'block';
+    } else {
+        foo.style.display = 'none';
+    }
+}
+
+function showParagraphTwo() {
+	var foo = document.getElementById('churchParagraph');
+  if (foo.style.display === 'none') {
+        foo.style.display = 'block';
+    } else {
+        foo.style.display = 'none';
+    }
+}
+
+function showParagraphThree() {
+	var foo = document.getElementById('healthParagraph');
+  if (foo.style.display === 'none') {
+        foo.style.display = 'block';
+    } else {
+        foo.style.display = 'none';
+    }
+}
+
+function showParagraphFour() {
+	var foo = document.getElementById('myParagraph');
+  if (foo.style.display === 'none') {
+        foo.style.display = 'block';
+    } else {
+        foo.style.display = 'none';
+    }
+}
+</script>
+</body>
+</html>
